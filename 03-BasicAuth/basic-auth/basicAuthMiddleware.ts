@@ -15,7 +15,7 @@ const basicAuthMiddleware = (users: User[]) => async (req: Request, res: Respons
             // so that browser will pop up username/password dialog
             res.setHeader('WWW-Authenticate', 'Basic');
             return res.status(401).json({ error: 'Authorization header missing' });
-          }
+        }
 
         const credentials = Buffer.from(authHeader.split(' ')[1], 'base64').toString('utf-8');
         const [username, password] = credentials.split(':');

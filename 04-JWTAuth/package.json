@@ -1,5 +1,5 @@
 {
-  "name": "password-auth",
+  "name": "jwtauth",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,11 +10,15 @@
   "author": "geekcoding101@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "@types/bcryptjs": "^2.4.2",
-    "@types/body-parser": "^1.19.2",
-    "@types/express": "^4.17.17",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/body-parser": "^1.19.5",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
-    "express": "^4.18.2"
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21"
   }
 }
